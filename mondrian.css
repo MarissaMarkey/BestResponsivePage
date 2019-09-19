@@ -1,0 +1,151 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	background-color: blue;
+}
+
+
+.sand {
+	background-color: #F6E3D4;
+	width: 70%;
+	height:100%;
+}
+
+.blue {
+	display:block;
+	background-color: #92C4EE;
+
+}
+
+.lightblue {
+	background-color: #BBDBF7;
+}
+
+.narow-col {
+	display: block;
+	width: 30%;
+	height:100%;
+}
+
+.box {
+	width:100%;
+	height:calc(100%/2);
+}
+
+img {
+	border: double;
+	border-width: 15px;
+}
+
+.image2 {
+	display: none;
+}
+
+.hibye {
+	display: none;
+} /* Both the iamge2 class and hibye class are set to display: none because they are not shown on the first screen*/
+
+.center-horizontal {
+	align-items: center;	
+}
+
+.center-vertical {
+	justify-content: center;
+}
+
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+
+@media only screen and (max-width: 900px) {  /* The first breakpoint is at 900 px*/
+	body{
+		display: block;
+	}
+	
+	.narow-col {
+		display: flex;
+		width: 100%;
+		height:50%;
+	}
+	
+	.box {
+		height: 100%;
+		width:50%;
+	}
+	
+	.sand {
+		height: 50%;
+		width: 100%;
+		background-color: ACBCCB;
+	}
+	
+	.blue {
+		background-color: #1F466E;
+	}
+	
+	.lightblue {
+		background-color: #666699;
+	}
+	
+	img {
+		border: solid;
+		border-width: 7px;
+	}	
+	
+	.image1 {
+		display: none;
+	}
+
+	.image2 {
+		display: block;
+	}
+	
+	.contain-image {
+		max-height: 50%;
+		max-width: 50%;
+	}
+}	
+
+@media only screen and (max-width: 500px) {
+	.narow-col {
+		display: block;
+		height: 100%;
+		width:100%;
+	}
+	
+	.box {
+		height: 50%;
+		width: 100%;
+		display: flex;
+	}
+	
+	.sand {
+		display: none;
+	}
+	
+	.blue {
+		background-color:white;
+	}
+	
+	.lightblue {
+		background-color:white;
+		border-top: solid 5px;
+	}
+	
+	img {
+		visibility: hidden;
+	}
+	
+	.hibye {
+		display: flex;
+	}
+}
